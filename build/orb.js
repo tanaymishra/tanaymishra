@@ -160,7 +160,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
   ${bodies}
 
   <g class="cap">
-    <text x="${CX}" y="404" fill="#6e7681" font-size="12" text-anchor="middle" letter-spacing="6">BUILDING THINGS BIGGER THAN ME</text>
+    <text x="${CX}" y="404" fill="#6e7681" font-size="12" text-anchor="middle" letter-spacing="6">LOCKED IN SINCE 2021</text>
   </g>
 </svg>
 `;

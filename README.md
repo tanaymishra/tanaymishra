@@ -7,9 +7,22 @@
 ---
 
 <p align="center">
-  <b>Auther</b> &nbsp;·&nbsp; authentication and user management for organizations<br>
-  <b>Reliable</b> &nbsp;·&nbsp; uptime monitoring<br>
-  <b>Zyloris</b> &nbsp;·&nbsp; <a href="https://ziloris.com">ziloris.com</a>
+  <b>2021</b> &nbsp;a css button that glowed. that was the whole personality.<br>
+  <b>2026</b> &nbsp;auth infra, uptime monitors, pipelines that deploy while i'm asleep.
+</p>
+
+<p align="center"><b>never stopped. not one gap year.</b></p>
+
+<p align="center">
+  <sub>the green squares lie btw. most of what i ship is private.</sub>
+</p>
+
+---
+
+<p align="center">
+  <b>build</b> &nbsp; typescript · node · postgres · flutter<br>
+  <b>ship</b> &nbsp; docker · ci/cd · self-hosted · zero-downtime<br>
+  <b>own</b> &nbsp; frontend to the server it dies on
 </p>
 
 ---
@@ -19,24 +32,17 @@
 
 <br>
 
-There is no JavaScript on this page. GitHub's markdown sanitizer strips `<script>`, `<style>`,
-and every event handler before your browser ever sees the file. So the animation above cannot
-have a runtime.
+no javascript here. github strips `<script>`, `<style>` and every event handler before your
+browser sees the file, so this page cannot have a runtime.
 
-It has a build step instead.
+it has a build step instead. `build/orb.js` puts 400 particles in real 3-D space and solves the
+full perspective projection for all 48 keyframes ahead of time. those ship as SMIL value lists.
+the browser only interpolates between answers that were already worked out.
 
-`build/orb.js` places 400 particles in real 3-D space and computes the full perspective
-projection for all 48 keyframes of a rotation, ahead of time. Those frames ship as SMIL value
-lists inside the SVG. The browser never calculates anything, it only interpolates between
-positions that were already solved on my machine.
-
-The illusion is anamorphic, the same trick as the skull in Holbein's *The Ambassadors*. Each
-particle is dropped at a random depth along its own view ray, then its 3-D coordinates are
-solved backwards so that at exactly yaw zero it projects onto a letterform. One angle out of
-360 is legible. Everywhere else the geometry is honest and the image is noise.
-
-The dwell at the top of the loop is not a pause in the animation. It is the rotation easing
-through zero, which is also why the word arrives slowly and leaves fast.
+the reveal is anamorphic, same trick as the skull in Holbein's *The Ambassadors*. every particle
+gets a random depth along its own view ray, then its coordinates are solved backwards so that at
+yaw zero it lands on a letterform. the geometry is honest at every angle. exactly one angle is
+readable.
 
 ```
 node build/orb.js
