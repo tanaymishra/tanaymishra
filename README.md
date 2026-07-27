@@ -1,58 +1,37 @@
-<h1 align="center">Tanay Mishra</h1>
-
 <p align="center">
-  Full Stack Developer · building <a href="https://ziloris.com">Zyloris</a><br>
-  <sub>locked in since 2021</sub>
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/row-1.svg" width="880" alt="whoami and GitHub stats: 3,830 contributions this year, 93% private">
+  <img src="assets/v3-hero.svg" width="880" alt="Tanay Mishra, Full Stack Developer building Ziloris. Pixel art of a developer coding at 3am, a whoami terminal, and matrix rain.">
 </p>
 
 <p align="center">
-  <img src="assets/row-2.svg" width="880" alt="maths.txt and language breakdown across 77 repositories">
+  <img src="assets/v3-vitals.svg" width="880" alt="System status: brain 78%, motivation 90%, sleep 6%, coffee running. GitHub stats: 3,830 contributions, 3,549 private, 77 repos, 3 stars. Language donut chart.">
 </p>
 
 <p align="center">
-  <img src="assets/row-3.svg" width="880" alt="Zyloris projects: Reliable, Auther, Straincraft, PdfEdit">
+  <img src="assets/v3-stack.svg" width="880" alt="Stack coverage: frontend, backend, databases, ci/cd, security, disaster recovery, all near 100%. Creed: if it can be self-hosted it will be, if it's open source it's already better, if it ships without CI it does not ship, if the db goes down I wrote the runbook.">
 </p>
 
-<br>
+<p align="center">
+  <img src="assets/v3-maths.svg" width="880" alt="maths.txt with puns about Euler's identity, big-O, floating point, and P vs NP, next to a disaster recovery drill log where zero users noticed.">
+</p>
 
-<h3 align="center">Zyloris</h3>
+<p align="center">
+  <img src="assets/v3-projects.svg" width="880" alt="Ziloris projects: reliable (beta), auther (beta), straincraft (archived, physics won round one), folio (live).">
+</p>
 
-<table align="center">
-  <tr>
-    <td width="440" valign="top">
-      <b>RELIABLE</b> &nbsp;<sub>BUILDING · since Jan 2024</sub><br><br>
-      System uptime manager and incident response. Monitoring stacks are fragmented: one tool for
-      frontend errors, another for server metrics, a third for paging. This is all of it in one place.
-      <br><br><sub>Now: multi-region sharding for high-availability event logging.</sub>
-    </td>
-    <td width="440" valign="top">
-      <b>AUTHER</b> &nbsp;<sub>BUILDING · since Nov 2023</sub><br><br>
-      Identity provider and SSO infrastructure. Auth0 and Clerk punish growth with per-user pricing.
-      You should not have to pay to verify who your own users are.
-      <br><br><sub>Now: public beta, SSO and MFA, no per-user pricing.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="440" valign="top">
-      <b>STRAINCRAFT</b> &nbsp;<sub>CONCEPT · since Aug 2024</sub><br><br>
-      Bio-visualization and molecular modelling.
-      <br><br><sub>Now: problem statement and feasibility.</sub>
-    </td>
-    <td width="440" valign="top">
-      <b>PDFEDIT</b> &nbsp;<sub>CONCEPT · since Dec 2024</sub><br><br>
-      Browser-based PDF manipulation that runs entirely on your machine. Nothing is uploaded.
-      <br><br><sub>Now: core logic implementation.</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <sub><a href="https://ziloris.com"><b>Ziloris</b></a> is not a company. it is an open source, free-to-use software
+  initiative I work on full time: uptime without the pager sprawl, auth without per-user pricing, documents that never
+  leave your browser. every project above is open to contributions, pick one at
+  <a href="https://ziloris.com">ziloris.com</a>.</sub>
+</p>
 
-<br>
+<p align="center">
+  <img src="assets/v3-chaos.svg" width="880" alt="installing_personality.sh checklist, life.exe flowchart (wake up, have plans? no: code), and rubber duck debugging log.">
+</p>
+
+<p align="center">
+  <img src="assets/v3-footer.svg" width="880" alt="quote.log, a pixel dino jumping cacti, and a visitor counter reading 001337.">
+</p>
 
 ---
 
@@ -61,22 +40,23 @@
 
 <br>
 
-no javascript. github strips `<script>`, `<style>` and every event handler before your browser
-sees the file, and the SVGs are served under `default-src 'none'` so they cannot fetch a single
-external asset either. every panel, ring, bar and rule above is drawn at build time.
-
-each row is one SVG rather than a markdown table of separate images, because GitHub adds
-unpredictable padding to table cells and that is the only way to control the layout exactly.
+no javascript, no external images, no font CDNs. github strips `<script>`, `<style>` and every
+event handler before your browser sees this file, and the SVGs are served under
+`default-src 'none'` so they cannot fetch anything either. the pixel art is a few hundred
+`<rect>` elements placed at build time, and the only thing moving is SMIL animation, the one
+thing github's sanitizer leaves alive.
 
 **the numbers are real**, pulled from the GraphQL API, including the ones that make me look
-smaller. 3 public stars. the 93% is `restrictedContributionsCount / contributionCalendar.total`:
-3,549 of 3,830 contributions never appear on the public graph.
+smaller. 3 public stars. 3,549 of my 3,830 contributions this year are private: the green
+squares lie.
 
-**the project statuses are read from the Zyloris source**, not written by hand, so "CONCEPT"
-means it is genuinely still a concept.
+**the project statuses are read from the Ziloris source**, not written by hand. ARCHIVED means
+I tried and physics won. for now.
+
+the visitor counter is hardcoded to 1337. you knew that.
 
 ```
-node build/dash.js
+node build/dash-v3.js
 ```
 
 </details>
