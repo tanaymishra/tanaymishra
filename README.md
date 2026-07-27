@@ -32,31 +32,3 @@
 <p align="center">
   <img src="assets/v3-footer.svg" width="880" alt="quote.log, a pixel dino jumping cacti, and a visitor counter reading 001337.">
 </p>
-
----
-
-<details>
-<summary><b>how this page works</b></summary>
-
-<br>
-
-no javascript, no external images, no font CDNs. github strips `<script>`, `<style>` and every
-event handler before your browser sees this file, and the SVGs are served under
-`default-src 'none'` so they cannot fetch anything either. the pixel art is a few hundred
-`<rect>` elements placed at build time, and the only thing moving is SMIL animation, the one
-thing github's sanitizer leaves alive.
-
-**the numbers are real**, pulled from the GraphQL API, including the ones that make me look
-smaller. 3 public stars. 3,549 of my 3,830 contributions this year are private: the green
-squares lie.
-
-**the project statuses are read from the Ziloris source**, not written by hand. ARCHIVED means
-I tried and physics won. for now.
-
-the visitor counter is hardcoded to 1337. you knew that.
-
-```
-node build/dash-v3.js
-```
-
-</details>
