@@ -1,78 +1,37 @@
 <p align="center">
-  <img src="assets/orb.svg" width="100%" alt="A particle cloud that resolves into a name once per rotation">
-</p>
-
-<p align="center"><sub>wait for it.</sub></p>
-
-<br>
-
-<p align="center">
-  <img src="assets/card-whoami.svg" width="880" alt="whoami">
+  <img src="assets/v3-hero.svg" width="880" alt="Tanay Mishra, Full Stack Developer building Ziloris. Pixel art of a developer coding at 3am, a whoami terminal, and matrix rain.">
 </p>
 
 <p align="center">
-  <img src="assets/card-numbers.svg" width="880" alt="3,830 contributions in the last 12 months, 93% of them private">
+  <img src="assets/v3-vitals.svg" width="880" alt="System status: brain 78%, motivation 90%, sleep 6%, coffee running. GitHub stats: 3,830 contributions, 3,549 private, 77 repos, 3 stars. Language donut chart.">
 </p>
 
 <p align="center">
-  <img src="assets/card-langs.svg" width="880" alt="Language breakdown across 77 repositories">
+  <img src="assets/v3-stack.svg" width="880" alt="Stack coverage: frontend, backend, databases, ci/cd, security, disaster recovery, all near 100%. Creed: if it can be self-hosted it will be, if it's open source it's already better, if it ships without CI it does not ship, if the db goes down I wrote the runbook.">
 </p>
 
-<br>
+<p align="center">
+  <img src="assets/v3-maths.svg" width="880" alt="maths.txt with puns about Euler's identity, big-O, floating point, and P vs NP, next to a disaster recovery drill log where zero users noticed.">
+</p>
 
-<h3 align="center">stack</h3>
+<p align="center">
+  <img src="assets/v3-projects.svg" width="880" alt="Ziloris projects: reliable (beta), auther (beta), straincraft (archived, physics won round one), folio (live).">
+</p>
 
-<table align="center">
-  <tr>
-    <td align="right"><b>front</b></td>
-    <td><img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,html,css" alt="React, Next.js, TypeScript, Tailwind, HTML, CSS"></td>
-  </tr>
-  <tr>
-    <td align="right"><b>back</b></td>
-    <td><img src="https://skillicons.dev/icons?i=nodejs,express,python,postgres,redis,graphql" alt="Node.js, Express, Python, Postgres, Redis, GraphQL"></td>
-  </tr>
-  <tr>
-    <td align="right"><b>ops</b></td>
-    <td><img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,vercel,githubactions,nginx" alt="Docker, Kubernetes, AWS, Vercel, GitHub Actions, Nginx"></td>
-  </tr>
-  <tr>
-    <td align="right"><b>tools</b></td>
-    <td><img src="https://skillicons.dev/icons?i=vscode,figma,postman,prisma,git,linux" alt="VS Code, Figma, Postman, Prisma, Git, Linux"></td>
-  </tr>
-</table>
+<p align="center">
+  <sub><a href="https://ziloris.com"><b>Ziloris</b></a> is not a company. it is an open source, free-to-use software
+  initiative I work on full time: uptime without the pager sprawl, auth without per-user pricing, documents that never
+  leave your browser. every project above is open to contributions, pick one at
+  <a href="https://ziloris.com">ziloris.com</a>.</sub>
+</p>
 
-<br>
+<p align="center">
+  <img src="assets/v3-chaos.svg" width="880" alt="installing_personality.sh checklist, life.exe flowchart (wake up, have plans? no: code), and rubber duck debugging log.">
+</p>
 
-<h3 align="center">shipping</h3>
-
-<table align="center">
-  <tr>
-    <td width="440" valign="top">
-      <h4><a href="https://github.com/tanaymishra/Auther-frontend">auther</a></h4>
-      authentication and user management for organizations, in realtime.
-      <br><br><sub><b>TypeScript</b> · auther.ziloris.com</sub>
-    </td>
-    <td width="440" valign="top">
-      <h4><a href="https://github.com/tanaymishra/Reliable-Frontend">reliable</a></h4>
-      uptime and monitoring for services that are not allowed to go down.
-      <br><br><sub><b>TypeScript</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="440" valign="top">
-      <h4><a href="https://github.com/tanaymishra/Exebee">exebee</a></h4>
-      the long running one. still in it.
-      <br><br><sub><b>TypeScript</b></sub>
-    </td>
-    <td width="440" valign="top">
-      <h4><a href="https://github.com/tanaymishra/zyloris-main">zyloris</a></h4>
-      everything above, under one roof.
-      <br><br><sub><b>TypeScript</b> · <a href="https://ziloris.com">ziloris.com</a></sub>
-    </td>
-  </tr>
-</table>
-
-<br>
+<p align="center">
+  <img src="assets/v3-footer.svg" width="880" alt="quote.log, a pixel dino jumping cacti, and a visitor counter reading 001337.">
+</p>
 
 ---
 
@@ -81,28 +40,23 @@
 
 <br>
 
-no javascript here. github strips `<script>`, `<style>` and every event handler before your
-browser sees the file, so this page cannot have a runtime. the SVGs are served under
-`default-src 'none'` too, so they cannot pull in a single external asset either.
-
-everything above is therefore drawn or baked at build time.
-
-**the banner** is real 3-D. `build/orb.js` puts 400 particles in perspective space and solves
-the full projection for all 48 keyframes ahead of time, shipping them as SMIL value lists. the
-browser only interpolates between answers that were already worked out. the reveal is
-anamorphic, same trick as the skull in Holbein's *The Ambassadors*: every particle gets a random
-depth along its own view ray, then its coordinates are solved backwards so that at yaw zero it
-lands on a letterform. the geometry is honest at every angle. exactly one angle is readable.
-
-**the cards** are `build/cards.js`. SVG cannot animate text content, so the counters are not
-counters, they are seventeen stacked `<text>` nodes each visible for one slice of an eased ramp.
+no javascript, no external images, no font CDNs. github strips `<script>`, `<style>` and every
+event handler before your browser sees this file, and the SVGs are served under
+`default-src 'none'` so they cannot fetch anything either. the pixel art is a few hundred
+`<rect>` elements placed at build time, and the only thing moving is SMIL animation, the one
+thing github's sanitizer leaves alive.
 
 **the numbers are real**, pulled from the GraphQL API, including the ones that make me look
-smaller. 3 public stars. the 93% is `restrictedContributionsCount / contributionCalendar.total`.
+smaller. 3 public stars. 3,549 of my 3,830 contributions this year are private: the green
+squares lie.
+
+**the project statuses are read from the Ziloris source**, not written by hand. ARCHIVED means
+I tried and physics won. for now.
+
+the visitor counter is hardcoded to 1337. you knew that.
 
 ```
-node build/orb.js
-node build/cards.js
+node build/dash-v3.js
 ```
 
 </details>
