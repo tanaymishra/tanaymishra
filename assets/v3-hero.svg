@@ -14,23 +14,23 @@
   <text x="56" y="34" font-size="7.5" fill="#4ade80" text-anchor="middle" letter-spacing="1">EAT</text>
   <text x="56" y="46" font-size="7.5" fill="#4ade80" text-anchor="middle" letter-spacing="1">SLEEP</text>
   <text x="56" y="58" font-size="7.5" fill="#4ade80" text-anchor="middle" letter-spacing="1">CODE</text>
-  <text x="56" y="70" font-size="7.5" fill="#525b66" text-anchor="middle" letter-spacing="1">REPEAT</text>
+  <text x="56" y="70" font-size="7.5" fill="#525b66" text-anchor="middle" letter-spacing="1">fork()</text>
   <rect x="186" y="22" width="54" height="22" rx="3" fill="#141420" stroke="#2a2a3a"/>
   <text x="213" y="37" font-size="9.5" fill="#a78bfa" text-anchor="middle">03:12 AM<tspan fill="#a78bfa"><animate attributeName="opacity" dur="1.4s" repeatCount="indefinite" values="1;0.2;1"/></tspan></text>
-  <text x="16" y="222" font-size="19" font-weight="700" fill="#e6edf3">Tanay Mishra</text>
-  <text x="16" y="244" font-size="11.5" fill="#4ade80">Full Stack Developer</text>
-  <text x="16" y="261" font-size="10.5" fill="#8b98a5">building weird infra that</text>
-  <text x="16" y="275" font-size="10.5" fill="#8b98a5">(measurably) works</text>
-  <text x="16" y="296" font-size="9.5" fill="#525b66">&#10095; location</text>
-  <text x="96" y="296" font-size="9.5" fill="#e6edf3">: India</text>
-  <text x="16" y="311" font-size="9.5" fill="#525b66">&#10095; company</text>
-  <text x="96" y="311" font-size="9.5" fill="#e6edf3">: zyloris (mine)</text>
-  <text x="16" y="326" font-size="9.5" fill="#525b66">&#10095; stack</text>
-  <text x="96" y="326" font-size="9.5" fill="#e6edf3">: db to ci/cd, all of it</text>
-  <text x="16" y="341" font-size="9.5" fill="#525b66">&#10095; timezone</text>
-  <text x="96" y="341" font-size="9.5" fill="#8b98a5">: UTC+5:30 (ships at 3am)</text>
-  <text x="16" y="356" font-size="9.5" fill="#525b66">&#10095; mood</text>
-  <text x="96" y="356" font-size="9.5" fill="#4ade80">: debug::life();</text><rect x="280" y="0" width="288" height="352" rx="10" fill="#0d0d12" stroke="#22222e" stroke-width="1.2"/>
+  <text x="16" y="212" font-size="19" font-weight="700" fill="#e6edf3">Tanay Mishra</text>
+  <text x="16" y="233" font-size="11.5" fill="#4ade80">Full Stack Developer</text>
+  <text x="16" y="250" font-size="10.5" fill="#8b98a5">systems, security, and</text>
+  <text x="16" y="264" font-size="10.5" fill="#8b98a5">everything between.</text>
+  <text x="16" y="285" font-size="9.5" fill="#525b66">&#10095; location</text>
+  <text x="96" y="285" font-size="9.5" fill="#e6edf3">: India</text>
+  <text x="16" y="299" font-size="9.5" fill="#525b66">&#10095; working on</text>
+  <text x="96" y="299" font-size="9.5" fill="#e6edf3">: ziloris, full time</text>
+  <text x="16" y="313" font-size="9.5" fill="#525b66">&#10095; stack</text>
+  <text x="96" y="313" font-size="9.5" fill="#e6edf3">: db to ci/cd, all of it</text>
+  <text x="16" y="327" font-size="9.5" fill="#525b66">&#10095; timezone</text>
+  <text x="96" y="327" font-size="9.5" fill="#8b98a5">: UTC+5:30 (ships at 3am)</text>
+  <text x="16" y="341" font-size="9.5" fill="#525b66">&#10095; mood</text>
+  <text x="96" y="341" font-size="9.5" fill="#4ade80">: debug::life();</text><rect x="280" y="0" width="288" height="352" rx="10" fill="#0d0d12" stroke="#22222e" stroke-width="1.2"/>
   <text x="296" y="30" font-size="11.5" fill="#4ade80">tanay@github:~$ <tspan fill="#e6edf3">whoami</tspan></text><g opacity="0"><text x="296" y="62" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">full stack, actually</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.0429;0.0643;0.96;1" values="0;0;1;1;0"/></g><g opacity="0"><text x="440" y="62" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">auth nerd</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.0607;0.0821;0.96;1" values="0;0;1;1;0"/></g><g opacity="0"><text x="296" y="88" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">uptime obsessed</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.0786;0.1000;0.96;1" values="0;0;1;1;0"/></g><g opacity="0"><text x="440" y="88" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">db whisperer</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.0964;0.1179;0.96;1" values="0;0;1;1;0"/></g><g opacity="0"><text x="296" y="114" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">self-hosts everything</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1143;0.1357;0.96;1" values="0;0;1;1;0"/></g><g opacity="0"><text x="440" y="114" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">pipeline gardener</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1321;0.1536;0.96;1" values="0;0;1;1;0"/></g><g opacity="0"><text x="296" y="140" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">overthinker</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1500;0.1714;0.96;1" values="0;0;1;1;0"/></g><g opacity="0"><text x="440" y="140" font-size="10.5" fill="#a78bfa">&#10095; <tspan fill="#e6edf3">perfectionist*</tspan></text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.1679;0.1893;0.96;1" values="0;0;1;1;0"/></g>
   <g opacity="0"><text x="296" y="172" font-size="9.5" fill="#525b66">*recovering. mostly.</text><animate attributeName="opacity" dur="14s" repeatCount="indefinite" keyTimes="0;0.2214;0.2429;0.96;1" values="0;0;1;1;0"/></g>
   <line x1="296" y1="188" x2="552" y2="188" stroke="#1a1a24"/>

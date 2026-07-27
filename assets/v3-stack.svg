@@ -1,49 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="258" viewBox="0 0 880 258" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340" role="img">
   <defs></defs>
   <style>text{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace}</style>
-  <rect width="880" height="258" fill="#070709"/>
-  <rect x="0" y="0" width="880" height="258" rx="10" fill="#0d0d12" stroke="#22222e" stroke-width="1.2"/>
-  <text x="16" y="26" font-size="12" fill="#4ade80">&#10095; <tspan fill="#e6edf3" font-weight="600">tech_stack.json</tspan></text>
-  <text x="864" y="26" font-size="10" fill="#525b66" text-anchor="end">every layer, no favorites</text><text x="16" y="70" font-size="11" fill="#a78bfa" font-weight="600">frontend</text>
-  <rect x="122.0" y="56" width="49.0" height="21" rx="10.5" fill="none" stroke="#a78bfa" opacity="0.55"/>
-  <text x="146.5" y="70" font-size="10" fill="#e6edf3" text-anchor="middle">React</text>
-  <rect x="180.0" y="56" width="61.4" height="21" rx="10.5" fill="none" stroke="#a78bfa" opacity="0.55"/>
-  <text x="210.7" y="70" font-size="10" fill="#e6edf3" text-anchor="middle">Next.js</text>
-  <rect x="250.4" y="56" width="80.0" height="21" rx="10.5" fill="none" stroke="#a78bfa" opacity="0.55"/>
-  <text x="290.4" y="70" font-size="10" fill="#e6edf3" text-anchor="middle">TypeScript</text>
-  <rect x="339.4" y="56" width="67.6" height="21" rx="10.5" fill="none" stroke="#a78bfa" opacity="0.55"/>
-  <text x="373.2" y="70" font-size="10" fill="#e6edf3" text-anchor="middle">Tailwind</text>
-  <rect x="416.0" y="56" width="42.8" height="21" rx="10.5" fill="none" stroke="#a78bfa" opacity="0.55"/>
-  <text x="437.4" y="70" font-size="10" fill="#e6edf3" text-anchor="middle">Vite</text><text x="16" y="104" font-size="11" fill="#4ade80" font-weight="600">backend</text>
-  <rect x="122.0" y="90" width="42.8" height="21" rx="10.5" fill="none" stroke="#4ade80" opacity="0.55"/>
-  <text x="143.4" y="104" font-size="10" fill="#e6edf3" text-anchor="middle">Node</text>
-  <rect x="173.8" y="90" width="61.4" height="21" rx="10.5" fill="none" stroke="#4ade80" opacity="0.55"/>
-  <text x="204.5" y="104" font-size="10" fill="#e6edf3" text-anchor="middle">Express</text>
-  <rect x="244.2" y="90" width="42.8" height="21" rx="10.5" fill="none" stroke="#4ade80" opacity="0.55"/>
-  <text x="265.6" y="104" font-size="10" fill="#e6edf3" text-anchor="middle">REST</text>
-  <rect x="296.0" y="90" width="80.0" height="21" rx="10.5" fill="none" stroke="#4ade80" opacity="0.55"/>
-  <text x="336.0" y="104" font-size="10" fill="#e6edf3" text-anchor="middle">WebSockets</text>
-  <rect x="385.0" y="90" width="49.0" height="21" rx="10.5" fill="none" stroke="#4ade80" opacity="0.55"/>
-  <text x="409.5" y="104" font-size="10" fill="#e6edf3" text-anchor="middle">Redis</text><text x="16" y="138" font-size="11" fill="#facc15" font-weight="600">database</text>
-  <rect x="122.0" y="124" width="67.6" height="21" rx="10.5" fill="none" stroke="#facc15" opacity="0.55"/>
-  <text x="155.8" y="138" font-size="10" fill="#e6edf3" text-anchor="middle">Postgres</text>
-  <rect x="198.6" y="124" width="55.2" height="21" rx="10.5" fill="none" stroke="#facc15" opacity="0.55"/>
-  <text x="226.2" y="138" font-size="10" fill="#e6edf3" text-anchor="middle">Prisma</text>
-  <rect x="262.8" y="124" width="67.6" height="21" rx="10.5" fill="none" stroke="#facc15" opacity="0.55"/>
-  <text x="296.6" y="138" font-size="10" fill="#e6edf3" text-anchor="middle">sharding</text>
-  <rect x="339.4" y="124" width="86.2" height="21" rx="10.5" fill="none" stroke="#facc15" opacity="0.55"/>
-  <text x="382.5" y="138" font-size="10" fill="#e6edf3" text-anchor="middle">replication</text>
-  <rect x="434.6" y="124" width="142.0" height="21" rx="10.5" fill="none" stroke="#facc15" opacity="0.55"/>
-  <text x="505.6" y="138" font-size="10" fill="#e6edf3" text-anchor="middle">backups that restore</text><text x="16" y="172" font-size="11" fill="#22d3ee" font-weight="600">devops</text>
-  <rect x="122.0" y="158" width="55.2" height="21" rx="10.5" fill="none" stroke="#22d3ee" opacity="0.55"/>
-  <text x="149.6" y="172" font-size="10" fill="#e6edf3" text-anchor="middle">Docker</text>
-  <rect x="186.2" y="158" width="49.0" height="21" rx="10.5" fill="none" stroke="#22d3ee" opacity="0.55"/>
-  <text x="210.7" y="172" font-size="10" fill="#e6edf3" text-anchor="middle">Nginx</text>
-  <rect x="244.2" y="158" width="104.8" height="21" rx="10.5" fill="none" stroke="#22d3ee" opacity="0.55"/>
-  <text x="296.6" y="172" font-size="10" fill="#e6edf3" text-anchor="middle">GitHub Actions</text>
-  <rect x="358.0" y="158" width="49.0" height="21" rx="10.5" fill="none" stroke="#22d3ee" opacity="0.55"/>
-  <text x="382.5" y="172" font-size="10" fill="#e6edf3" text-anchor="middle">Linux</text>
-  <rect x="416.0" y="158" width="129.6" height="21" rx="10.5" fill="none" stroke="#22d3ee" opacity="0.55"/>
-  <text x="480.8" y="172" font-size="10" fill="#e6edf3" text-anchor="middle">blue-green deploys</text>
-  <line x1="16" y1="196" x2="864" y2="196" stroke="#1a1a24"/><text x="16" y="218" font-size="10" fill="#8b98a5">&#10095; if it can be self-hosted, it will be</text><text x="16" y="235" font-size="10" fill="#8b98a5">&#10095; if it ships without CI, it does not ship</text><text x="16" y="252" font-size="10" fill="#4ade80">&#10095; if the db goes down, I wrote the runbook</text>
+  <rect width="880" height="340" fill="#070709"/>
+  <rect x="0" y="0" width="880" height="340" rx="10" fill="#0d0d12" stroke="#22222e" stroke-width="1.2"/>
+  <text x="16" y="26" font-size="12" fill="#4ade80">&#10095; <tspan fill="#e6edf3" font-weight="600">stack_coverage.log</tspan></text>
+  <text x="864" y="26" font-size="10" fill="#525b66" text-anchor="end">no tool lists. the honest answer is "yes".</text>
+  <text x="16" y="72" font-size="10.5" fill="#e6edf3">frontend</text>
+  <rect x="150" y="63" width="330" height="10" rx="2" fill="#1a1a24"/>
+  <rect x="150" y="63" height="10" rx="2" fill="#a78bfa" opacity="0.9" width="323.4">
+    <animate attributeName="width" dur="14s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1" keyTimes="0;0.030;0.140;0.96;1"
+      values="0;0;323.4;323.4;0"/>
+  </rect>
+  <text x="492" y="72" font-size="9.5" fill="#a78bfa" font-weight="600">98%</text>
+  <text x="864" y="72" font-size="9.5" fill="#525b66" text-anchor="end">pixels behave</text>
+  <text x="16" y="99" font-size="10.5" fill="#e6edf3">backend</text>
+  <rect x="150" y="90" width="330" height="10" rx="2" fill="#1a1a24"/>
+  <rect x="150" y="90" height="10" rx="2" fill="#4ade80" opacity="0.9" width="326.7">
+    <animate attributeName="width" dur="14s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1" keyTimes="0;0.055;0.165;0.96;1"
+      values="0;0;326.7;326.7;0"/>
+  </rect>
+  <text x="492" y="99" font-size="9.5" fill="#4ade80" font-weight="600">99%</text>
+  <text x="864" y="99" font-size="9.5" fill="#525b66" text-anchor="end">boring on purpose</text>
+  <text x="16" y="126" font-size="10.5" fill="#e6edf3">databases</text>
+  <rect x="150" y="117" width="330" height="10" rx="2" fill="#1a1a24"/>
+  <rect x="150" y="117" height="10" rx="2" fill="#facc15" opacity="0.9" width="330.0">
+    <animate attributeName="width" dur="14s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1" keyTimes="0;0.080;0.190;0.96;1"
+      values="0;0;330.0;330.0;0"/>
+  </rect>
+  <text x="492" y="126" font-size="9.5" fill="#facc15" font-weight="600">100%</text>
+  <text x="864" y="126" font-size="9.5" fill="#525b66" text-anchor="end">sharded, replicated, restored for real</text>
+  <text x="16" y="153" font-size="10.5" fill="#e6edf3">ci/cd</text>
+  <rect x="150" y="144" width="330" height="10" rx="2" fill="#1a1a24"/>
+  <rect x="150" y="144" height="10" rx="2" fill="#22d3ee" opacity="0.9" width="330.0">
+    <animate attributeName="width" dur="14s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1" keyTimes="0;0.105;0.215;0.96;1"
+      values="0;0;330.0;330.0;0"/>
+  </rect>
+  <text x="492" y="153" font-size="9.5" fill="#22d3ee" font-weight="600">100%</text>
+  <text x="864" y="153" font-size="9.5" fill="#525b66" text-anchor="end">green since day one</text>
+  <text x="16" y="180" font-size="10.5" fill="#e6edf3">security</text>
+  <rect x="150" y="171" width="330" height="10" rx="2" fill="#1a1a24"/>
+  <rect x="150" y="171" height="10" rx="2" fill="#f472b6" opacity="0.9" width="320.1">
+    <animate attributeName="width" dur="14s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1" keyTimes="0;0.130;0.240;0.96;1"
+      values="0;0;320.1;320.1;0"/>
+  </rect>
+  <text x="492" y="180" font-size="9.5" fill="#f472b6" font-weight="600">97%</text>
+  <text x="864" y="180" font-size="9.5" fill="#525b66" text-anchor="end">paranoid by default</text>
+  <text x="16" y="207" font-size="10.5" fill="#e6edf3">disaster recovery</text>
+  <rect x="150" y="198" width="330" height="10" rx="2" fill="#1a1a24"/>
+  <rect x="150" y="198" height="10" rx="2" fill="#60a5fa" opacity="0.9" width="326.7">
+    <animate attributeName="width" dur="14s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1" keyTimes="0;0.155;0.265;0.96;1"
+      values="0;0;326.7;326.7;0"/>
+  </rect>
+  <text x="492" y="207" font-size="9.5" fill="#60a5fa" font-weight="600">99%</text>
+  <text x="864" y="207" font-size="9.5" fill="#525b66" text-anchor="end">rehearsed at 3am, voluntarily</text>
+  <text x="16" y="236" font-size="9" fill="#525b66">avg 98.8% · the missing 1.2% is humility</text>
+  <line x1="16" y1="248" x2="864" y2="248" stroke="#1a1a24"/><text x="16" y="270" font-size="10" fill="#8b98a5">&#10095; if it can be self-hosted, it will be</text><text x="16" y="287" font-size="10" fill="#8b98a5">&#10095; if it's open source, it's already better</text><text x="16" y="304" font-size="10" fill="#8b98a5">&#10095; if it ships without CI, it does not ship</text><text x="16" y="321" font-size="10" fill="#4ade80">&#10095; if the db goes down, I wrote the runbook</text>
 </svg>

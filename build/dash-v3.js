@@ -97,26 +97,26 @@ const props = `
   <text x="${PIX_X + 42}" y="${PIX_Y + 18}" font-size="7.5" fill="${C.green}" text-anchor="middle" letter-spacing="1">EAT</text>
   <text x="${PIX_X + 42}" y="${PIX_Y + 30}" font-size="7.5" fill="${C.green}" text-anchor="middle" letter-spacing="1">SLEEP</text>
   <text x="${PIX_X + 42}" y="${PIX_Y + 42}" font-size="7.5" fill="${C.green}" text-anchor="middle" letter-spacing="1">CODE</text>
-  <text x="${PIX_X + 42}" y="${PIX_Y + 54}" font-size="7.5" fill="${C.faint}" text-anchor="middle" letter-spacing="1">REPEAT</text>
+  <text x="${PIX_X + 42}" y="${PIX_Y + 54}" font-size="7.5" fill="${C.faint}" text-anchor="middle" letter-spacing="1">fork()</text>
   <rect x="${PIX_X + 172}" y="${PIX_Y + 6}" width="54" height="22" rx="3" fill="#141420" stroke="#2a2a3a"/>
   <text x="${PIX_X + 199}" y="${PIX_Y + 21}" font-size="9.5" fill="${C.violet}" text-anchor="middle">03:12 AM<tspan fill="${C.violet}"><animate attributeName="opacity" dur="1.4s" repeatCount="indefinite" values="1;0.2;1"/></tspan></text>`;
 
 const FIELDS = [
-  ['location', 'India', C.text],
-  ['company',  'ziloris (mine)', C.text],
-  ['stack',    'db to ci/cd, all of it', C.text],
-  ['timezone', 'UTC+5:30 (ships at 3am)', C.muted],
-  ['mood',     'debug::life();', C.green],
+  ['location',   'India', C.text],
+  ['working on', 'ziloris, full time', C.text],
+  ['stack',      'db to ci/cd, all of it', C.text],
+  ['timezone',   'UTC+5:30 (ships at 3am)', C.muted],
+  ['mood',       'debug::life();', C.green],
 ];
 
 const heroLeft = panel(0, 0, 268, R1H) + pixels + props + `
-  <text x="16" y="222" font-size="19" font-weight="700" fill="${C.text}">Tanay Mishra</text>
-  <text x="16" y="244" font-size="11.5" fill="${C.green}">Full Stack Developer</text>
-  <text x="16" y="261" font-size="10.5" fill="${C.muted}">systems, security, and</text>
-  <text x="16" y="275" font-size="10.5" fill="${C.muted}">everything between.</text>`
+  <text x="16" y="212" font-size="19" font-weight="700" fill="${C.text}">Tanay Mishra</text>
+  <text x="16" y="233" font-size="11.5" fill="${C.green}">Full Stack Developer</text>
+  <text x="16" y="250" font-size="10.5" fill="${C.muted}">systems, security, and</text>
+  <text x="16" y="264" font-size="10.5" fill="${C.muted}">everything between.</text>`
   + FIELDS.map(([k, v, col], i) => `
-  <text x="16" y="${296 + i * 15}" font-size="9.5" fill="${C.faint}">&#10095; ${k}</text>
-  <text x="96" y="${296 + i * 15}" font-size="9.5" fill="${col}">: ${esc(v)}</text>`).join('');
+  <text x="16" y="${285 + i * 14}" font-size="9.5" fill="${C.faint}">&#10095; ${k}</text>
+  <text x="96" y="${285 + i * 14}" font-size="9.5" fill="${col}">: ${esc(v)}</text>`).join('');
 
 // ── whoami terminal ──
 const TRAITS = [
@@ -183,7 +183,7 @@ const R2H = 248;
 
 const PROCS = [
   ['brain.exe',      78, C.green],
-  ['motivation.sys', 97, C.green],
+  ['motivation.sys', 90, C.green],
   ['social.bat',     15, C.pink],
   ['sleep.dll',       6, C.violet],
 ];
@@ -256,54 +256,97 @@ const vitalsC = panel(608, 0, 272, R2H) + head(608, 0, 'languages.py', null) + d
 
 const row2 = svg(R2H, '', vitalsA + vitalsB + vitalsC);
 
-/* ════ row 3 · tech_stack.json ════════════════════════════════════════════ */
+/* ════ row 3 · stack_coverage.log ═════════════════════════════════════════ */
 
-const R3H = 258;
-const STACK = [
-  ['frontend', C.violet, ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Vite']],
-  ['backend',  C.green,  ['Node', 'Express', 'REST', 'WebSockets', 'Redis']],
-  ['database', C.yellow, ['Postgres', 'Prisma', 'sharding', 'replication', 'backups that restore']],
-  ['devops',   C.cyan,   ['Docker', 'Nginx', 'GitHub Actions', 'Linux', 'blue-green deploys']],
+// no tool lists. after five years the honest answer is "yes".
+const R3H = 340;
+const COVERAGE = [
+  ['frontend',          98,  C.violet, 'pixels behave'],
+  ['backend',           99,  C.green,  'boring on purpose'],
+  ['databases',         100, C.yellow, 'sharded, replicated, restored for real'],
+  ['ci/cd',             100, C.cyan,   'green since day one'],
+  ['security',          97,  C.pink,   'paranoid by default'],
+  ['disaster recovery', 99,  C.blue,   'rehearsed at 3am, voluntarily'],
 ];
 
-const chips = STACK.map(([cat, col, items], r) => {
-  const y = 70 + r * 34;
-  let x = 122;
-  const row = items.map(label => {
-    const w = label.length * 6.2 + 18;
-    const s = `
-  <rect x="${x.toFixed(1)}" y="${y - 14}" width="${w.toFixed(1)}" height="21" rx="10.5" fill="none" stroke="${col}" opacity="0.55"/>
-  <text x="${(x + w / 2).toFixed(1)}" y="${y}" font-size="10" fill="${C.text}" text-anchor="middle">${esc(label)}</text>`;
-    x += w + 9;
-    return s;
-  }).join('');
-  return `<text x="16" y="${y}" font-size="11" fill="${col}" font-weight="600">${cat}</text>` + row;
+const covBars = COVERAGE.map(([n, p, col, note], i) => {
+  const y = 72 + i * 27;
+  const w = (p / 100) * 330;
+  return `
+  <text x="16" y="${y}" font-size="10.5" fill="${C.text}">${n}</text>
+  <rect x="150" y="${y - 9}" width="330" height="10" rx="2" fill="${C.rule}"/>
+  <rect x="150" y="${y - 9}" height="10" rx="2" fill="${col}" opacity="0.9" width="${w.toFixed(1)}">
+    <animate attributeName="width" dur="${CYCLE}s" repeatCount="indefinite" calcMode="spline"
+      keySplines="0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1" keyTimes="0;${(0.03 + i * 0.025).toFixed(3)};${(0.14 + i * 0.025).toFixed(3)};0.96;1"
+      values="0;0;${w.toFixed(1)};${w.toFixed(1)};0"/>
+  </rect>
+  <text x="492" y="${y}" font-size="9.5" fill="${col}" font-weight="600">${p}%</text>
+  <text x="864" y="${y}" font-size="9.5" fill="${C.faint}" text-anchor="end">${esc(note)}</text>`;
 }).join('');
 
 const CREED = [
-  'if it can be self-hosted, it will be',
-  'if it ships without CI, it does not ship',
-  'if the db goes down, I wrote the runbook',
+  ['if it can be self-hosted, it will be', C.muted],
+  ["if it's open source, it's already better", C.muted],
+  ['if it ships without CI, it does not ship', C.muted],
+  ['if the db goes down, I wrote the runbook', C.green],
 ];
 const row3 = svg(R3H, '',
-  panel(0, 0, W, R3H) + head(0, 0, 'tech_stack.json', 'every layer, no favorites', W) + chips + `
-  <line x1="16" y1="196" x2="864" y2="196" stroke="${C.rule}"/>`
-  + CREED.map((l, i) =>
-    `<text x="16" y="${218 + i * 17}" font-size="10" fill="${i === 2 ? C.green : C.muted}">&#10095; ${esc(l)}</text>`).join('')
+  panel(0, 0, W, R3H) + head(0, 0, 'stack_coverage.log', 'no tool lists. the honest answer is "yes".', W) + covBars + `
+  <text x="16" y="${72 + 6 * 27 + 2}" font-size="9" fill="${C.faint}">avg 98.8% · the missing 1.2% is humility</text>
+  <line x1="16" y1="${72 + 6 * 27 + 14}" x2="864" y2="${72 + 6 * 27 + 14}" stroke="${C.rule}"/>`
+  + CREED.map(([l, col], i) =>
+    `<text x="16" y="${72 + 6 * 27 + 36 + i * 17}" font-size="10" fill="${col}">&#10095; ${esc(l)}</text>`).join('')
 );
+
+/* ════ row 3.5 · maths.txt + disaster_recovery.log ════════════════════════ */
+
+const R35H = 240;
+const MATH = [
+  ['e^(i&#960;) + 1 = 0',      'five constants, one line, zero waste'],
+  ['O(n log n)',               'a promise, not a suggestion'],
+  ['0.1 + 0.2 &#8800; 0.3',    'a lie we all agreed to believe'],
+  ['P &#8800; NP',             'probably. my rent depends on it.'],
+  ['lim sleep(t), t&#8594;deadline = 0', 'proven nightly'],
+  ['&#8704; bug &#8707; invariant', 'that I assumed and never proved'],
+];
+
+const mathsPanel = panel(0, 0, 566, R35H) + head(0, 0, 'maths.txt', 'the universe also refuses to document itself', 566)
+  + MATH.map(([f, note], i) => `
+  <text x="16" y="${66 + i * 28}" font-size="11" fill="${C.violet}">&#10095; <tspan fill="${C.green}">${f}</tspan></text>
+  <text x="262" y="${66 + i * 28}" font-size="10" fill="${C.muted}">${esc(note)}</text>`).join('');
+
+const DRILL = [
+  ['03:12', 'drill: kill the primary db', C.pink],
+  ['03:12', 'replica promoted', C.text],
+  ['03:13', 'traffic rerouted', C.text],
+  ['03:14', 'backups verified (again)', C.text],
+  ['03:15', 'users who noticed: 0', C.green],
+];
+const drillPanel = panel(578, 0, 302, R35H) + head(578, 0, 'disaster_recovery.log', null)
+  + DRILL.map(([t, msg, col], i) => `
+  <g opacity="0">
+    <text x="594" y="${66 + i * 26}" font-size="9.5" fill="${C.faint}">${t}</text>
+    <text x="634" y="${66 + i * 26}" font-size="9.5" fill="${col}">${esc(msg)}</text>
+    ${fadeIn(0.8 + i * 0.7)}
+  </g>`).join('') + `
+  <line x1="594" y1="${66 + 5 * 26 - 8}" x2="864" y2="${66 + 5 * 26 - 8}" stroke="${C.rule}"/>
+  <text x="594" y="${66 + 5 * 26 + 14}" font-size="9.5" fill="${C.muted}">the best incident is the one</text>
+  <text x="594" y="${66 + 5 * 26 + 29}" font-size="9.5" fill="${C.muted}">nobody got paged for.</text>`;
+
+const row35 = svg(R35H, '', mathsPanel + drillPanel);
 
 /* ════ row 4 · zyloris projects ═══════════════════════════════════════════ */
 
 const R4H = 208;
 const PROJECTS = [
-  { n: 'reliable', col: C.green, s: 'BUILDING', dot: '#3178c6', lang: 'TypeScript',
+  { n: 'reliable', col: C.green, s: 'BETA', dot: '#3178c6', lang: 'TypeScript',
     d: ['uptime, incidents, alerts.', 'the whole pager,', 'one place.'] },
-  { n: 'auther', col: C.blue, s: 'PUBLIC BETA', dot: '#3178c6', lang: 'TypeScript',
+  { n: 'auther', col: C.blue, s: 'BETA', dot: '#3178c6', lang: 'TypeScript',
     d: ['SSO + MFA without', 'per-user pricing. your', 'users stay yours.'] },
-  { n: 'straincraft', col: C.amber, s: 'CONCEPT', dot: '#3572a5', lang: 'Python',
-    d: ['molecules, rendered.', 'bio-visualization', 'experiments.'] },
-  { n: 'pdfedit', col: C.amber, s: 'CONCEPT', dot: '#3178c6', lang: 'TypeScript',
-    d: ['pdf editing that never', 'leaves your browser.', 'nothing uploaded.'] },
+  { n: 'straincraft', col: '#f87171', s: 'ARCHIVED', dot: '#3572a5', lang: 'Python',
+    d: ['molecules, rendered.', "couldn't build it. yet.", 'physics won round one.'] },
+  { n: 'folio', col: C.violet, s: 'LIVE', dot: '#3178c6', lang: 'TypeScript',
+    d: ['pdf editing that never', 'leaves your browser.', 'nothing uploaded. ever.'] },
 ];
 
 const cards = PROJECTS.map((p, i) => {
@@ -320,8 +363,8 @@ const cards = PROJECTS.map((p, i) => {
 }).join('');
 
 const row4 = svg(R4H, '', `
-  <text x="2" y="24" font-size="12" fill="${C.green}">&#10095; <tspan fill="${C.text}" font-weight="600">zyloris_projects.md</tspan></text>
-  <text x="878" y="24" font-size="10" fill="${C.faint}" text-anchor="end">one company, four bets, statuses read from source</text>`
+  <text x="2" y="24" font-size="12" fill="${C.green}">&#10095; <tspan fill="${C.text}" font-weight="600">ziloris_projects.md</tspan></text>
+  <text x="878" y="24" font-size="10" fill="${C.faint}" text-anchor="end">open source, free to use, open to contributors · ziloris.com</text>`
   + cards
 );
 
@@ -471,7 +514,8 @@ const row6 = svg(R6H, '',
 
 const files = {
   'v3-hero.svg': row1, 'v3-vitals.svg': row2, 'v3-stack.svg': row3,
-  'v3-projects.svg': row4, 'v3-chaos.svg': row5, 'v3-footer.svg': row6,
+  'v3-maths.svg': row35, 'v3-projects.svg': row4, 'v3-chaos.svg': row5,
+  'v3-footer.svg': row6,
 };
 for (const [n, s] of Object.entries(files)) {
   fs.writeFileSync(path.join(OUT, n), s);
