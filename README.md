@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/v3-vitals.svg" width="880" alt="System status: brain 78%, motivation 90%, sleep 6%, coffee running. GitHub stats: 3,830 contributions, 3,549 private, 77 repos, 3 stars. Language donut chart.">
+  <img src="assets/v3-vitals.svg" width="880" alt="System status: brain 78%, motivation 90%, sleep 6%, coffee running. GitHub stats: 3,830 contributions, 3,549 private, 83 repos (30 public), 3 stars. Language donut chart.">
 </p>
 
 <p align="center">

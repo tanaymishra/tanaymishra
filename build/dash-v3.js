@@ -217,7 +217,7 @@ const hpBar = Array.from({ length: SEGS }, (_, i) => {
 const STATS = [
   ['contributions (12mo)', '3,830', C.text],
   ['private, invisible',   '3,549', C.pink],
-  ['repositories',         '77',    C.text],
+  ['repositories',         '83 (30 public)', C.text],
   ['public stars',         '3 (ouch)', C.muted],
 ];
 const vitalsB = panel(296, 0, 284, R2H) + head(296, 0, 'github_stats.exe', null) + `
@@ -247,7 +247,7 @@ const donut = LANGS.map(([, c, col]) => {
 }).join('\n  ');
 
 const vitalsC = panel(608, 0, 272, R2H) + head(608, 0, 'languages.py', null) + donut + `
-  <text x="688" y="137" font-size="13" font-weight="700" fill="${C.text}" text-anchor="middle">77</text>
+  <text x="688" y="137" font-size="13" font-weight="700" fill="${C.text}" text-anchor="middle">83</text>
   <text x="688" y="152" font-size="8" fill="${C.faint}" text-anchor="middle">repos</text>`
   + LANGS.map(([n, c, col], i) => `
   <circle cx="757" cy="${84 + i * 22}" r="3.6" fill="${col}"/>
