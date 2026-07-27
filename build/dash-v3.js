@@ -140,7 +140,7 @@ const heroMid = panel(280, 0, 288, R1H) + `
   <text x="296" y="214" font-size="11.5" fill="${C.green}">tanay@github:~$ <tspan fill="${C.text}">cat truth.txt</tspan></text>
   <g opacity="0"><text x="296" y="244" font-size="10.5" fill="${C.text}">3,846 contributions this year</text>${fadeIn(4.2)}</g>
   <g opacity="0"><text x="296" y="266" font-size="10.5" fill="${C.muted}">3,549 of them private</text>${fadeIn(4.7)}</g>
-  <g opacity="0"><text x="296" y="288" font-size="10.5" fill="${C.green}">the green squares lie.</text>${fadeIn(5.2)}</g>
+  <g opacity="0"><text x="296" y="288" font-size="10.5" fill="${C.green}">the squares show. the source doesn't.</text>${fadeIn(5.2)}</g>
   <text x="296" y="330" font-size="11" fill="${C.green}">&#9608;<animate attributeName="opacity" dur="1.1s" repeatCount="indefinite" values="1;0;1"/></text>`;
 
 // ── matrix rain ──
@@ -216,7 +216,7 @@ const hpBar = Array.from({ length: SEGS }, (_, i) => {
 
 const STATS = [
   ['contributions (12mo)', '3,846', C.text],
-  ['private, invisible',   '3,549', C.pink],
+  ['from private repos',   '3,549', C.pink],
   ['repositories',         '83 (30 public)', C.text],
   ['public stars',         '3 (ouch)', C.muted],
 ];
@@ -225,7 +225,7 @@ const vitalsB = panel(296, 0, 284, R2H) + head(296, 0, 'github_stats.exe', null)
     <animateTransform attributeName="transform" type="scale" additive="sum" dur="2.2s" repeatCount="indefinite" values="1;1.15;1" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
   </path>
   ${hpBar}
-  <text x="564" y="84" font-size="9" fill="${C.faint}" text-anchor="end">92% of the work is invisible</text>`
+  <text x="564" y="84" font-size="9" fill="${C.faint}" text-anchor="end">92% green in public, sealed in private</text>`
   + STATS.map(([k, v, col], i) => `
   <text x="312" y="${116 + i * 26}" font-size="10.5" fill="${C.muted}">${k}</text>
   <text x="564" y="${116 + i * 26}" font-size="10.5" fill="${col}" text-anchor="end" font-weight="600">${v}</text>`).join('') + `
