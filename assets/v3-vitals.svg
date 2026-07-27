@@ -54,7 +54,7 @@
   <text x="312" y="142" font-size="10.5" fill="#8b98a5">private, invisible</text>
   <text x="564" y="142" font-size="10.5" fill="#f472b6" text-anchor="end" font-weight="600">3,549</text>
   <text x="312" y="168" font-size="10.5" fill="#8b98a5">repositories</text>
-  <text x="564" y="168" font-size="10.5" fill="#e6edf3" text-anchor="end" font-weight="600">77</text>
+  <text x="564" y="168" font-size="10.5" fill="#e6edf3" text-anchor="end" font-weight="600">83 (30 public)</text>
   <text x="312" y="194" font-size="10.5" fill="#8b98a5">public stars</text>
   <text x="564" y="194" font-size="10.5" fill="#8b98a5" text-anchor="end" font-weight="600">3 (ouch)</text>
   <text x="312" y="228" font-size="9.5" fill="#4ade80">&#10095; stars are a lagging indicator. so is sleep.</text><rect x="608" y="0" width="272" height="248" rx="10" fill="#0d0d12" stroke="#22222e" stroke-width="1.2"/>
@@ -71,7 +71,7 @@
     stroke-dasharray="16.8 272.3" stroke-dashoffset="-160.5"/>
   <circle cx="688" cy="140" r="46" fill="none" stroke="#6e7681" stroke-width="17"
     stroke-dasharray="35.5 253.5" stroke-dashoffset="-179.2"/>
-  <text x="688" y="137" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">77</text>
+  <text x="688" y="137" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">83</text>
   <text x="688" y="152" font-size="8" fill="#525b66" text-anchor="middle">repos</text>
   <circle cx="757" cy="84" r="3.6" fill="#3178c6"/>
   <text x="768" y="88" font-size="9.5" fill="#e6edf3">TypeScript</text>
